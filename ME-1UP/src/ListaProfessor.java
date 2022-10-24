@@ -5,6 +5,6 @@ public class ListaProfessor {
         CadastroProfessor.adicionarProfessor(Yanna);
         CadastroProfessor.adicionarProfessor(Ulpio);
         CadastroProfessor.imprimirProfessor();
-        CadastroProfessor.verificarMatricula("004");
-}
+        CadastroProfessor.verificarMatricula("002");
+    }
 }

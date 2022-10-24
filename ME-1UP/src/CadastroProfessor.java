@@ -1,8 +1,7 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class CadastroProfessor{
     private static ArrayList <Professor> lista = new ArrayList<>();
-
     public static void adicionarProfessor(Professor professor){
         lista.add(professor);
     }
@@ -16,19 +15,20 @@ public class CadastroProfessor{
     }
     public static void verificarMatricula(String matricula){
         boolean existe= false;
-            for(int i = 0;i<lista.size();i++){
-                Professor p1 = lista.get(i);
-                if ( matricula.equals(p1.getMatricula())){
-                    existe =true;
-                    break;
-                }
-            
+        for(int i = 0;i<lista.size();i++){
+        Professor p1 = lista.get(i);
+            if ( matricula.equals(p1.getMatricula())){
+                existe =true;
+                break;
+        }
     }
-            if (existe){
-                System.out.println("O professor existe");
-            }
-            else{
-                System.out.println("Não encontrado");
-            }
+        if (existe){
+            System.out.println("O professor existe");
+            
+            
+        }
+        else{
+            System.out.println("Não encontrado");
+        }
 }
 }
